@@ -1,0 +1,202 @@
+﻿h2
+{
+  color: #FFFFFF;
+  font-size: 90%;
+  font-family: Calibri;
+  margin: 10px 10px 10px 10px;
+  font-weight: bold;
+}
+
+  h2 span
+  {
+    font-size: 105%;
+    font-weight: normal;
+  }
+
+ul
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+#sideBar
+{
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 200px;
+  right: -7px; 
+}
+
+#sideBarTab
+{
+  float: left;
+  height: 137px;
+  width: 28px;
+}
+
+  #sideBarTab img
+  {
+    border: 0px solid #FFFFFF;
+  }
+
+#sideBarContents
+{
+  overflow: hidden !important;
+}
+
+#sideBarContentsInner
+{
+  width: 180px;
+}
+
+.urbangreymenu
+{
+  width: 190px; /*width of menu*/
+}
+
+  .urbangreymenu .headerbar
+  {
+    font: 14px Calibri;
+    color: white;
+    background: #ffd800 url('../Images/Red_2.jpg') no-repeat 2px 2px; /*last 2 values are the x and y coordinates of bullet image 10,2*/
+    margin-bottom: 0px; /*bottom spacing between header and rest of content*/
+    margin-top: 6px;
+    text-transform: uppercase;
+    padding: 1px 1px 1px 4px; /*31px is left indentation of header text*/
+    text-align: left;
+  }
+
+    .urbangreymenu .headerbar a
+    {
+      text-decoration: none;
+      color: white;
+      display: block;
+      margin-bottom: 0px;
+    }
+
+  .urbangreymenu ul
+  {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px; /*bottom spacing between each UL and rest of content*/
+  }
+
+    .urbangreymenu ul li
+    {
+      padding-bottom: 4px; /*bottom spacing between menu items*/
+    }
+
+      .urbangreymenu ul li a
+      {
+        font: normal 14px Calibri;
+        color: black;
+        background: #E9E9E9;
+        display: block;
+        padding: 1px 0;
+        line-height: 13px;
+        padding-left: 8px; /*link text is indented 8px*/
+        text-decoration: none;
+      }
+
+        .urbangreymenu ul li a:visited
+        {
+          color: black;
+        }
+
+        .urbangreymenu ul li a:hover
+        { /*hover state CSS*/
+          color: white;
+          background-color: chocolate;
+        }
+
+
+
+#btnAudit
+{
+  background-color: #CCFFFF;
+  width: 126px;
+  display: Block;
+  text-align: left;
+}
+
+#btnAuditButton
+{
+  background-color: #CCFFFF;
+  width: 200px;
+  display: Block;
+  text-align: left;
+}
+
+#btnImmediate
+{
+  background-color: #FFCCFF;
+  width: 200px;
+  display: Block;
+  text-align: left;
+}
+
+#btnCorrective
+{
+  background-color: #FFFFCC;
+  width: 200px;
+  display: Block;
+  text-align: left;
+}
+
+#btnPreventive
+{
+  background-color: #CCFFCC;
+  width: 200px;
+  display: Block;
+  text-align: left;
+}
+
+#btnManagerPanel
+{
+  background-color: #FFFFFF;
+  width: 200px;
+  display: Block;
+  text-align: left;
+}
+
+#btnImmediateDate
+{
+  background-color: #FF99FF;
+}
+
+#btnImmediateDate0
+{
+  background-color: #FFFFCC;
+}
+
+#btnCorrectiveDate
+{
+  background-color: #FFFF99;
+}
+
+#btnPreventiveDate
+{
+  background-color: #99FF99;
+}
+
+#btnCorrectiveDate0
+{
+  background-color: #FFFF99;
+}
+
+#btnPreventiveDate0
+{
+  background-color: #99FF99;
+}
+
+#btnCorrectiveOpen
+{
+  background-color: #FFFF99;
+}
+
+#btnPreventiveOpen
+{
+  background-color: #99FF99;
+}

@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Academic.master.cs" Inherits="_ECC.C_Academic.Academic" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+	<script type="text/javascript" src="../Scripts/ddaccordion.js"></script>
+	<script type="text/javascript" src="../Scripts/myScripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="../Content/StylesMaster.css" />
+  <link rel="stylesheet" type="text/css" href="../Content/Site.css" />
+ 
+	<br /><br />
+			<table class="nav-justified" style="width: 100%">
+		<tr>
+			<td style="width: 200px; vertical-align: top; text-align: left;">
+				<br /><br /><br />
+				<asp:Panel ID="pnlSide" runat="server"  Width="100%">
+								<asp:ContentPlaceHolder ID="ContentPlaceHolderMenu" runat="server">										
+										<div class="urbangreymenu">
+											<P class="headerbar"><a href="../Home.aspx">Home</a></P>
+											<ul class="submenu">
+											</ul>		
+												<%--Curriculum--%>
+												<P class="headerbar"><a>Academic Spectrum</a></P>                      
+												<ul class="submenu">
+													<li id="Li12" runat="server"><a href="Curriculum.aspx">Curriculum</a></li>
+													<li id="Li1" runat="server"><a href=".aspx">***</a></li>                          
+												</ul>																			
+												<%--English--%>
+												<P class="headerbar"><a>English</a></P>
+												<ul class="submenu">
+													<li id="Li4" runat="server"><a href="English_Home.aspx" >About English</a></li>													
+												</ul>
+											<%--Mathematics--%>
+												<P class="headerbar"><a>Mathematics</a></P>
+												<ul class="submenu">
+													<li id="Li5" runat="server"><a href="Maths_Home.aspx" >About Mathematics</a></li>													
+												</ul>
+											<%--Sciences--%>
+												<P class="headerbar"><a>Sciences</a></P>
+												<ul class="submenu">
+													<li id="Li6" runat="server"><a href="Science_Home.aspx" >About Sciences</a></li>
+                          <li id="Li2" runat="server"><a href="Science_Physics.aspx" >Physics</a></li>
+                          <li id="Li3" runat="server"><a href="Science_Chemistry.aspx" >Chemistry</a></li>
+                          <li id="Li13" runat="server"><a href="Science_Agriculture.aspx" >Agriculture</a></li>
+                          <li id="Li14" runat="server"><a href="Science_Biology.aspx" >Biology</a></li>
+												</ul>
+											<%--Social Sciences--%>
+												<P class="headerbar"><a>Social Sciences</a></P>
+												<ul class="submenu">
+													<li id="Li7" runat="server"><a href="Social_Home.aspx" >About Social Sciences</a></li>
+                          <li id="Li15" runat="server"><a href="Social_Geography.aspx" >Geography</a></li>
+                          <li id="Li16" runat="server"><a href="Social_History.aspx" >History</a></li>
+                          <li id="Li17" runat="server"><a href="Social_Social.aspx" >Social Studies</a></li>
+                          <li id="Li18" runat="server"><a href="Social_TeAo.aspx" >Te Ao Whanui</a></li>
+                          <li id="Li19" runat="server"><a href="Social_Tourism.aspx" >Tourism</a></li>
+												</ul>
+											<%--Business Studies--%>
+												<P class="headerbar"><a>Business Studies</a></P>
+												<ul class="submenu">
+													<li id="Li8" runat="server"><a href=".aspx" >About Business Studies</a></li>													
+												</ul>
+											<%--Health and Physical--%>
+												<P class="headerbar"><a>Health and Physical</a></P>
+												<ul class="submenu">
+													<li id="Li9" runat="server"><a href="Health_Home.aspx" >About Health and Physical</a></li>													
+												</ul>
+											<%--Languages--%>
+												<P class="headerbar"><a>Languages</a></P>
+												<ul class="submenu">
+													<li id="Li10" runat="server"><a href=".aspx" >About Languages</a></li>													
+												</ul>
+											<%--Arts--%>
+												<P class="headerbar"><a>Arts</a></P>
+												<ul class="submenu">
+													<li id="Li11" runat="server"><a href=".aspx" >About Arts</a></li>													
+												</ul>
+										</div>
+								</asp:ContentPlaceHolder>
+											</asp:Panel></td>
+			<td style="vertical-align: top"><br /><asp:ContentPlaceHolder ID="myMain" runat="server">
+					</asp:ContentPlaceHolder></td>
+		</tr>
+	
+	</table>  
+</asp:Content>
+
