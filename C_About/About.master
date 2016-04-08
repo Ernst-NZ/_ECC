@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.master.cs" Inherits="_ECC.C_About.About" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+  	<script type="text/javascript" src="../Scripts/ddaccordion.js"></script>
+  <script type="text/javascript" src="../Scripts/myScripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="../Content/StylesMaster.css" />
+ 
+	<br /><br />
+			<table class="nav-justified" style="width: 100%">
+		<tr>
+			<td style="width: 200px; vertical-align: top; text-align: left;">
+        <br /><br /><br />
+				<asp:Panel ID="pnlSide" runat="server"  Width="100%">
+								<asp:ContentPlaceHolder ID="ContentPlaceHolderMenu" runat="server">
+										<%--<asp:Panel ID="Panel2" runat="server" Width="200px">
+												<asp:HyperLink ID="hplErnst" runat="server" NavigateUrl="~/Sessie.aspx" Style="font-size: small; font-weight: 700;" ForeColor="White" CssClass="Sessie" >Sessie</asp:HyperLink>
+												<asp:Button ID="btnreset" runat="server" Text="Reset" Visible="True" BackColor="Red" style="font-size: xx-small" /><br />
+										</asp:Panel>--%>
+										<div class="urbangreymenu">
+                      <P class="headerbar"><a href="../Home.aspx">Home</a></P>
+                      <ul class="submenu">
+                      </ul>		
+												<%--our School--%>
+												<P class="headerbar"><a>Our School</a></P>                      
+												<ul class="submenu">
+                          <li id="Li12" runat="server"><a href="About_Home.aspx">About Edgecumbe</a></li>
+													<li id="Li1" runat="server"><a href="Principals_Message.aspx">Principal's Message</a></li>
+													<li id="Li11" runat="server"><a href="Our_Values.aspx" >Our Values</a></li>
+													<li id="Li2" runat="server"><a href="Location.aspx" >Location</a></li>   
+													<li id="Li3" runat="server"><a href="Facilities.aspx" >Facilities</a></li>      
+												</ul>																			
+												<%--Information--%>
+												<P class="headerbar"><a>Information</a></P>
+												<ul class="submenu">
+													<li id="Li4" runat="server"><a href="Ero_report.aspx" >ERO Reports</a></li>
+													<li id="Li5" runat="server"><a href="Enrolment.aspx" >Enrolment</a></li>
+													<li id="Li6" runat="server"><a href="Charter.aspx" >Charter</a></li>
+													<li id="Li7" runat="server"><a href="NCEA.Aspx" >NCEA</a></li>
+													<li id="Li8" runat="server"><a href="Uniform.aspx" >Uniform</a></li>
+													<li id="Li9" runat="server"><a href="Badge.aspx" >Badge</a></li>
+													<li id="Li10" runat="server"><a href="Prospectus.aspx" >Prospectus</a></li>
+												</ul>                     					
+										</div>
+								</asp:ContentPlaceHolder>
+											</asp:Panel></td>
+			<td style="vertical-align: top"><br /><asp:ContentPlaceHolder ID="myMain" runat="server">
+					</asp:ContentPlaceHolder></td>
+		</tr>
+	
+	</table>  
+</asp:Content>
